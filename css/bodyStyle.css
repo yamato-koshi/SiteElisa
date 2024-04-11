@@ -1,0 +1,63 @@
+/*direita*/
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+    border-style: solid;
+    border-right-color: red;
+    border-width: 2px 12px 2px 0px;
+    animation: slideRight 1.5s linear;
+}
+.text{
+    text-align: right;
+    margin-right: 40px;
+}
+.section img{
+    width: 250px;
+    height: 250px;
+}
+.section h2{
+    margin-top: 20px;
+}
+
+
+/*esquerda*/
+.section2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+    border-style: solid;
+    border-left-color: red;
+    border-width: 2px 0px 2px 12px;
+    animation: slideRight 1.5s linear;
+}
+.text2{
+    text-align: left;
+    margin-left: 40px;
+}
+.section2 img{
+    width: 250px;
+    height: 250px;
+}
+.section2 h2{
+    margin-top: 20px;
+}
+
+  
+  @keyframes slideRight {
+    0%{
+        transform: translate(-50%);
+        opacity: 0;
+        right: 0px;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+        right: 150;
+    }
+  }
+  

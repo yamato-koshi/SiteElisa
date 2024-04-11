@@ -1,0 +1,63 @@
+.header {
+    background-color: #21fdfd;
+    padding: 30%;
+    text-align: center;
+  }
+  
+  img{
+    width: 60px;
+  }
+  
+body::-webkit-scrollbar{
+    display: none;
+}
+.sticky-header {
+    background-color: #27ffa5;
+    color: #000000;
+    position: sticky; /* Apply the sticky positioning */
+    top: 0; /* Stick the element to the top of the viewport */
+    z-index: 100; /* Ensure the navbar is above other content */
+    font-size: 16px;
+    font-weight: 700;
+}
+  
+  .sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .sticky-header li {
+    margin-right: 60px;
+  }
+
+  .sticky-header ul li a{
+    padding: 3px 3px;
+    border: 4px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .sticky-header a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.5s;
+  }
+  .sticky-header a:hover{
+    border-top-color: black;
+    border-bottom-color: black;
+    color: #c87e4f;
+  }
+
+  
+  

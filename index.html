@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <link rel="stylesheet" href="css/stickyStyle.css">
+    <link rel="stylesheet" href="css/bodyStyle.css">
+    <link rel="stylesheet" href="css/footerStyle.css">
+  </head>
+  <body>
+
+    <!--header-->
+    <div class="header">
+      <img src="images/whale_12851636.png" alt="">
+      <h2>Pode Rolar</h2>
+      <p>Vamos para baixo, para vermos o que temos!</p>
+    </div>
+
+    <!--navbar sticky-->
+    <header class="sticky-header">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!--Slider-->
+    <section id="about" class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/pexels-meruyert-gonullu-6152391.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Enjoy the finest coffee drinks.</span>
+            <h2>
+              Enjoy Our Exclusive <br />
+              Coffee and Cocktails
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/pexels-michael-burrows-7129153.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">We really like what we do.</span>
+            <h2>
+              Coffee Beans with a <br />
+              Perfect Aroma
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/pexels-zen-chung-5529588.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Making Our coffee with lover.</span>
+            <h2>
+              Alluring and Fragrant <br />
+              Coffee Aroma
+            </h2>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <div class="section2">
+      <img src="images/thumb/pexels-wolfgang-weiser-18697998 (1).jpg" alt="">
+      <div class="text2">
+        <h2>Texto e imagem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate quo porro asperiores veniam et necessitatibus? Facere soluta placeat eaque harum voluptate aperiam fugit voluptatibus omnis inventore neque. Unde, laboriosam!
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="text">
+        <h2>Texto e imagem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate quo porro asperiores veniam et necessitatibus? Facere soluta placeat eaque harum voluptate aperiam fugit voluptatibus omnis inventore neque. Unde, laboriosam!
+        </p>
+      </div>
+      <img src="images/thumb/pexels-greta-hoffman-7728082.jpg" alt="">
+    </div>
+
+    <div class="section2">
+      <img src="images/thumb/pexels-erik-scheel-95425.jpg" alt="">
+      <div class="text2">
+        <h2>Texto e imagem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate quo porro asperiores veniam et necessitatibus? Facere soluta placeat eaque harum voluptate aperiam fugit voluptatibus omnis inventore neque. Unde, laboriosam!
+        </p>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer-col">
+          <h4>products</h4>
+          <ul>
+              <li><a href="#">teams</a></li>
+              <li><a href="#">advertising</a></li>
+              <li><a href="#">talent</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>network</h4>
+          <ul>
+              <li><a href="#">technology</a></li>
+              <li><a href="#">science</a></li>
+              <li><a href="#">business</a></li>
+              <li><a href="#">professional</a></li>
+              <li><a href="#">API</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">legal</a></li>
+              <li><a href="#">contact us</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="links">
+              <a href="#"><img src="images/social/facebook-logo_4406234.png" alt=""></a>
+              <a href="#"><img src="images/social/instagram_6422200.png" alt=""></a>
+              <a href="#"><img src="images/social/linkedin_1384014 (1).png" alt=""></a>
+              <a href="#"><img src="images/social/email_3178165.png" alt=""></a>
+          </div>
+      </div>
+  </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
